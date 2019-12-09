@@ -1,0 +1,1 @@
+curl -s "https://docs.cloud.oracle.com/iaas/tools/public_ip_ranges.json" | jq -r '.regions[].cidrs[].cidr'

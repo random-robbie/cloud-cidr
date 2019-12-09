@@ -1,0 +1,1 @@
+curl -s "https://raw.githubusercontent.com/ibm-cloud-docs/hardware-firewall-dedicated/master/ips.md" | grep -Eo "[0-9]{1,3}(?:\.[0-9]{1,3}){0,3}/[0-9]+" | sort -u | grep -v -E '^(100.|192\.168|10\.|172\.1[6789]\.|172\.2[0-9]\.|172\.3[01]\.)'
